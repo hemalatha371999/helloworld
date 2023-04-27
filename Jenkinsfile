@@ -7,7 +7,7 @@ pipeline {
             }
         }
         stage('Two') {
-          steps{
+            steps{
                input('Do you want to proceed?')
           }
        
@@ -17,10 +17,10 @@ pipeline {
                 not {
                     branch "master"
                 }
-                steps {
-                    echo "Hello"
+            }    
+            steps {
+                echo "Hello"
                 }
             }     
-    }
     }
 }
