@@ -28,6 +28,7 @@ pipeline {
                     steps {
                         echo "Running the unit test"
                     }
+                }
                     stage('Integration Test') {
                           agent {
                               docker {
