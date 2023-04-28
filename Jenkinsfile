@@ -26,7 +26,7 @@ pipeline {
       parallel {
         stage('Unit Test') {
           steps {
-            echo "Running the unit test"
+            echo 'Running the unit test'
           }
         }
         stage('Integration Test') {
@@ -37,7 +37,7 @@ pipeline {
             }
           }
            steps {
-            echo "Running integration test"
+            echo 'Running integration test'
           }
         }
 
